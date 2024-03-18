@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/cross.ico" type="image/x-icon">
+    <title>Desafio 10</title>
+    <style>
+        @font-face {
+            font-family: 'android';
+            src: url('fontes/idroid.otf');
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        body {
+            background-color: #75d48a;
+            
+        }
+        header {
+            background-image: linear-gradient(to bottom,#53AD67,#33693E);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 0px;
+        }
+        header > p {
+            font-weight: 300;
+        }
+        header > nav   {
+            text-align: left;
+            padding-top: 30px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+         }
+        header > nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        header > nav > a#home:hover, a#noticias:hover, a#curiosidades:hover, a#faleconosco:hover {
+            background-color: #53AD67;
+            text-decoration: underline;
+            padding: 10px;
+            font-weight: bold;
+
+        }
+        
+        main {
+            font-family: 'android' 'arial';
+            margin: 10px;
+            border: 1px ;
+            background-color: white;
+            margin: auto;
+            min-width: 320px;
+            max-width: 800px;
+            padding: 10px;
+            }
+            
+        main > img {
+                width: 100%;
+                margin: 10px;
+            }
+        
+        main >img.pequena {
+            width: 50%;
+            margin: auto;
+            display: block;
+        }
+        main > div.video {
+            background-color: #33693E;
+            padding: 15px;
+            padding-bottom: 55%; 
+            position: relative;
+        }
+        main > div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        main > h1,h2 {
+            font-family: 'android';
+            color: #387a46;
+        }
+        main > h2#primeira {
+            background-image: linear-gradient(to right,#53ad6646, white);
+        }
+        footer {
+            border-radius: 20px 0px;
+            padding: 10px;
+            background-color: white;border: 1px;
+            color: rgb(0, 0, 0);
+            font-weight: 450;
+            margin-top: 10px;
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer > ul {
+            list-style-position: inside;
+            columns: 2; /*Colunas */
+        }
+        footer > h2 {
+            background-image: linear-gradient(to right,#53ad6646, white);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+        <p>Tudo Aquilo que você sempre quis saber sobre o mundo tech, em um único lugar<p>
+        <nav>
+            <a href="index.html" id="home">Home</a>
+            <a href="" id="noticias">Noticias</a>
+            <a href="" id="curiosidades">Curiosidades</a>
+            <a href="" id="faleconosco">Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <h1>HISTÓRIA DO MASCOTE DO ANDROID</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloribus tenetur nihil dignissimos mollitia dolore vel, sapiente aperiam. Fugiat saepe laudantium, blanditiis obcaecati minima ipsa quisquam molestiae perferendis aliquam culpa!</p>
+        <h2 id="primeira">A PRIMEIRA VERSÃO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, exercitationem ipsa quaerat hic dolor possimus quam, dolorem, vel ipsam omnis sequi reprehenderit quisquam vero accusantium quas sapiente officiis at corrupti! <p>
+        <picture>
+            <source media="(max-width:850px)" srcset="imagens/dan-droids-pq.png">
+            <img src="imagens/dan-droids.png" alt="imagensAndroids">
+        </picture>
+        <p>essa primeira versão bla bla bla bla </p>
+        <h2>SURGE UM NOVO MASCOTE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, unde, perferendis, nemo error quod minus vero sit illum repudiandae eos impedit dolor odio harum ut amet quisquam reprehenderit cumque sunt. <p>
+        <picture>
+            <source media="(max-width:850px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="criadora">
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab consectetur libero, repudiandae voluptatum recusandae temporibus inventore quia. Aliquid voluptas nesciunt provident accusantium vitae unde quae, maxime veritatis quaerat, consequatur rem?</p>
+        <picture>
+            <img class="pequena" src="imagens/bugdroid.png" alt="bugdroids">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse laboriosam nobis ex, illo, numquam ipsum fugit ullam, debitis similique corporis? Possimus, minima ullam. Expedita rem delectus quis! Quo, facilis?<p>
+        <div class="video">
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/l2UDgpLz20M" title="The next evolution of Android" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <h2>Quer aprender mais?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores voluptatibus sit magni sunt quasi omnis quisquam incidunt, doloribus porro mollitia accusamus eaque sapiente officiis ex, nihil, nisi eum? Quia, rerum.</p>
+        <ul>
+            <li>1.5 - <abbr title="Bolo de copo">Cupckake</abbr> </li>            
+            <li>1.6 - <abbr title="rosquinha">Donut</abbr></li>                
+            <li>3.0 - <abbr title="bomba chocolate">Eclair</abbr></li>
+            <li>2.2 - <abbr title="iougurte congelado">Frayo</abbr></li>
+            <li>2.3 - <abbr title="biscoito gengibre">Gingerbread</abbr></li>
+            <li>3.0 - <abbr title="favo de mel">Honeycomb</abbr></li>
+            <li>4.0 - <abbr title="sandwich de sorvete">Ice Cream Sandwich</abbr></li>
+            <li>4.1 - <abbr title="jujuba">Jelly Bean</abbr></li>
+            <li>4.4 - <abbr title="kitkat">KitKat</abbr></li>
+            <li>5.0 - <abbr title="pirulito">Lolpop</abbr></li>
+            <li>6.0 - <abbr title="marshmallow">Marshmallow</abbr></li>
+            <li>7.0 - <abbr title="torrone">Nougat</abbr></li>
+            <li>8.0 - <abbr title="oreo">Oreo</abbr></li>
+            <li>9.0 - <abbr title="torta">Pie</abbr></li>
+        </ul>
+        <p>Infelizmente, o Android Q não existiu, pois o google resolveu pôr fim a essa diversão prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+        <p>Acesse aqui o site <a href="https://www.android.com/intl/pt-BR_br/history/" target="_blank" rel="external">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+        </footer>
+        
+</body>
+</html>
